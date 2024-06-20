@@ -1,0 +1,159 @@
+@import url(./../App.css);
+
+.log-in-container,
+.sign-up-container {
+    display: flex;
+    margin: 4rem 0 0 9rem;
+    width: fit-content;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.431);
+}
+
+.log-in-container {
+    height: 26.67rem;
+}
+
+.sign-up-container {
+    height: 31rem;
+}
+
+.log-in-container img,
+.sign-up-container img {
+    width: 40rem;
+}
+
+.card {
+    background-color: #fff;
+    display: grid;
+    width: 25rem;
+    border-radius: 4px;
+    background-color: var(--color4);
+}
+
+.sign-up-container .info1 img {
+    height: 31rem;
+}
+
+
+.sign-up-container .info1 img,
+.log-in-container .log-in-card {
+    border-radius: 20px 0 0 20px !important;
+}
+
+
+.sign-up-card,
+.info2 img{ 
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.card-header.sign-up-header {
+    border-top-right-radius: 20px;
+}
+
+.card-header.log-in-header {
+    border-top-left-radius: 20px;
+}
+
+.card-header {
+    text-transform: uppercase;
+    padding: 20px;
+    display: grid;
+    height: 2rem;
+    place-items: center;
+    background-color: var(--color1);
+}
+
+.card-header .text-header {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+
+.card-body {
+    padding: 0 3rem;
+}
+
+.sign-up-field label,
+.log-in-field {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.sign-up-field input,
+.log-in-field input {
+    width: 90%;
+    height: 1.3rem;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sign-up-field input:focus,
+.log-in-field input:focus {
+    outline: none;
+}
+
+.password-field {
+    position: relative;
+}
+
+.sign-up-field:first-child {
+    margin-top: .5rem;
+}
+
+.password-field.log-in-field {
+    margin-top: 2rem;
+}
+
+.svg-btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.eye-svg {
+    height: 1rem;
+}
+
+.submit-parent {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.submit-parent .submit-btn {
+    padding: 10px 17px !important;
+    border: none;
+    font-size: .7rem;
+    border-radius: 4px;
+    background-color: var(--color1);
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s linear;
+    cursor: pointer;
+}
+
+.submit-parent .submit-btn:hover {
+    background-color: #776d82;
+}
+
+.card-body .second-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.second-auth.go-to-sign-up {
+    margin-top: 2rem;
+}
+
+.card-body .second-auth a {
+    color: blue;
+}

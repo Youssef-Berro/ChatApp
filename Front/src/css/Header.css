@@ -1,0 +1,45 @@
+header {
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: .2rem 1rem;
+    margin-top: 1.4rem;
+}
+
+.title {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Josefin Sans Std', sans-serif;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.title span {
+    font-size: 1.8rem;
+}
+
+.title sub {
+    font-size: .8rem;
+}
+
+
+.header-right-section {
+    width: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.header-right-section a {
+    text-decoration: none;
+}
+
+.header-right-section svg {
+    height: 20px;
+    filter: invert(1);
+    cursor: pointer;
+}

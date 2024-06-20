@@ -1,0 +1,98 @@
+/* :root {
+    --color1: #131313;
+    --color2: #fbf4ef;
+    --color3: #975e64;
+    --color4: #e8eae8ae;
+    --color5: #aaaeab;
+    --gradient: linear-gradient(to right top, #000000, #151515, #232323, #323232, #414141);
+} */
+:root {
+
+    --color1: #000000;
+    --color2: #fbf4ef;
+    --color3: #975e64;
+    --color4: #e8eae8ae;
+    --color5: #aaaeab;
+    --gradient: linear-gradient(
+        45deg,
+        hsl(0deg 0% 0%) 0%,
+        hsl(344deg 0% 4%) 11%,
+        hsl(344deg 0% 8%) 22%,
+        hsl(344deg 0% 10%) 33%,
+        hsl(344deg 0% 13%) 44%,
+        hsl(344deg 0% 15%) 56%,
+        hsl(344deg 0% 18%) 67%,
+        hsl(344deg 0% 20%) 78%,
+        hsl(344deg 0% 23%) 89%,
+        hsl(0deg 0% 25%) 100%
+    );
+}
+
+body {
+    background-color: var(--color4);
+}
+
+.custom-ok-button {
+    background-color: var(--color1) !important; 
+    color: white; 
+    border: none; 
+    box-shadow: 0 0 3px var(--color5) !important;
+}
+
+.custom-confirm-button {
+    background-color: rgb(177, 66, 66) !important; 
+    color: white; 
+    border: none; 
+    box-shadow: 0 0 3px red !important;
+}
+
+
+.users-chat::-webkit-scrollbar,
+.chat-history::-webkit-scrollbar {
+    width: 4px;
+}
+
+.users-chat::-webkit-scrollbar-thumb {
+    background-color: var(--color5);
+    border-radius: 3px; 
+}
+
+
+
+.search-user::-webkit-scrollbar,
+.search-result-container::-webkit-scrollbar,
+.search-bar::-webkit-scrollbar,
+.groups-chat::-webkit-scrollbar,
+.participants-cont::-webkit-scrollbar,
+.search-result::-webkit-scrollbar {
+    width: 4px;
+    background-color: var(--color5);
+    border-radius: 20px;
+}
+
+
+.search-user::-webkit-scrollbar-thumb,
+.search-result-container::-webkit-scrollbar-thumb,
+.search-bar::-webkit-scrollbar-thumb,
+.groups-chat::-webkit-scrollbar-thumb,
+.participants-cont::-webkit-scrollbar-thumb,
+.search-result::-webkit-scrollbar-thumb,
+.chat-history::-webkit-scrollbar-thumb{
+    background-color: var(--color1);
+    border-radius: 20px; 
+}
+
+
+@keyframes opacity {
+    from { opacity: 0.1}
+    to {opacity: 1}
+}
+
+.btn-type2 {
+    background-color: var(--color3) !important;
+    color: black !important;
+}
+
+.btn-type2:hover {
+    background-color: rgb(161, 25, 25) !important;
+}

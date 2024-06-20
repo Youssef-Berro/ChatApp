@@ -1,0 +1,139 @@
+@import url(./../App.css);
+
+.change-password-menu {
+    z-index: 8;
+    padding: 5px;
+    backdrop-filter: blur(3px) !important;
+    background-color: #aaabaead !important;
+}
+
+.change-password-menu~.overlay {
+    z-index: 7;
+    animation: opacity 0.22s;
+}
+
+.user-info~.overlay {
+    z-index: 5;
+    animation: opacity 0.22s;
+}
+
+.user-info {
+    position: absolute;
+    z-index: 6;
+    width: 40rem;
+    height: 22rem;
+    backdrop-filter: blur(3px);
+    background-image: var(--gradient);
+    bottom: 1%;
+    left: 1%;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    animation: opacity 0.22s;
+}
+
+.user-info .title {
+    font-size: 1.7rem;
+    padding-left: 2rem;
+}
+
+.user-info img {
+    box-shadow: 0 0 5px 2px black;
+    width: 10rem !important;
+    height: 10rem !important;
+
+}
+
+.user-info .info .name {
+    color: whitesmoke;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.user-info .info .email {
+    color: var(--color1);
+}
+
+.user-info .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.user-info .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+
+.user-info .close-user-info {
+    filter: invert(1);
+    cursor: pointer;
+    margin-right: 3rem;
+    border-radius: 10px;
+}
+
+.user-info .close-user-info svg {
+    height: 1.7rem;
+}
+
+.user-info .close-user-info:hover {
+    filter: invert(.4);
+}
+
+
+.update-name, 
+.update-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sumit-pass-btn {
+    margin: 5px;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.change-photo {
+    cursor: pointer;
+    color: var(--color5);
+}
+
+.change-photo:hover {
+    text-decoration: underline white;
+}
+
+input[type="file"]:not([disabled]) + label.change-photo {
+    text-decoration: none;
+    color: inherit;
+}
+
+.photo-operations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drop-photo-icon {
+    height: 1.4rem;
+    filter: invert(.8);
+    cursor: pointer;
+}
+
+.drop-photo-icon:hover {
+    filter: invert(1);
+}

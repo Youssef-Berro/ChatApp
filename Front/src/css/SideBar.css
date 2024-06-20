@@ -1,0 +1,83 @@
+@import url(./../App.css);
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: var(--color5);
+    width: 3rem;
+    height: 95vh;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+}
+
+.top-section {
+    margin-top: 2rem;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.top-section button {
+    height: fit-content;
+    position: relative;
+    padding: 8px;
+    margin: .5rem;
+}
+
+.bottom-section {
+    display: flex;
+    align-content: start;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.bottom-section button {
+    height: fit-content;
+}
+
+
+.top-section button,
+.bottom-section button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom-section img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 4px .1px var(--color1);
+}
+
+.top-section svg {
+    height: 1rem;
+    filter: invert(1);
+}
+
+
+.top-section .active::before {
+    content: '';
+    position: absolute;
+    width: 155%;
+    height: 120%;
+    left: -.6rem;
+    top: -.25rem;
+    background-color: var(--color1);
+    border-radius: 10px;
+}
+
+.top-section .active::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color2);
+    top: -3px;
+    right: -6px;
+    width: 3px;
+    height: 115%;
+}

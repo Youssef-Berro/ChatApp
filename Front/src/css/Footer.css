@@ -1,0 +1,41 @@
+@import url(./../App.css);
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color1);
+    margin: 4rem 0 .5rem 0;
+    padding: 2rem;
+    position: relative;
+}
+
+.footer .info {
+    color: var(--color2);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 2.4rem;
+}
+
+.footer .logo {
+    z-index: 0;
+    margin-left: -2rem;
+    margin-right: 3rem;
+}
+
+.footer .logo img {
+    height: 11rem;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 10rem;
+    background-color: var(--color2);
+    padding: 2rem;
+    border-radius: 59% 41% 100% 0% / 0% 82% 18% 100% ;
+}
